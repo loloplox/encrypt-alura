@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	max-width: 100%;
+	max-height: 100%;
+	background: #E5E5E5;
+}
+
+:root {
+	--primary-color: #0A3871;
+	--info-color: #495057;
+
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	padding: 25px;
+}
+
+.logo {
+	width: 120px;
+	height: 48px;
+	display: flex;
+	justify-content: center;
+}
+
+.logo img {
+	height: 100%;
+}
+
+main {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: space-evenly;
+}
+
+.encrypt_container {
+	width: 60%;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.input_text {
+	border: none;
+	background: transparent;
+	width: 80%;
+	height: 80%;
+	font-size: 32px;
+	color: var(--primary-color);
+	outline: none;
+	line-height: 150%;
+}
+
+.input_text::placeholder {
+	color: var(--primary-color);
+}
+
+.actions {
+	width: 90%;
+}
+
+.info {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.info img {
+	width: 15px;
+	height: 15px;
+}
+
+.info p {
+	color: var(--info-color);
+	font-size: 12px;
+}
+
+.btn_group {
+	margin-top: 20px;
+	display: flex;
+	width: 100%;
+	gap: 8px;
+}
+
+.btn_primary {
+	padding: 24px;
+	width: 100%;
+	background: var(--primary-color);
+	border: none;
+	border-radius: 24px;
+	color: white;
+	cursor: pointer;
+}
+
+.btn_secondary {
+	padding: 24px;
+	width: 100%;
+	background: #D8DFE8;
+	border: 1px black solid;
+	border-radius: 24px;
+	cursor: pointer;
+}
+
+
+.result_container {
+	width: 20%;
+	background: white;
+	padding: 20px;
+
+	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+	border-radius: 32px;
+}
+
+.not_results {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	text-align: center;
+}
+
+.not_results h3 {
+	font-size: 24px;
+	color: #343A40;
+	font-weight: 700;
+}
+
+.not_results p {
+	font-size: 16px;
+	color: #495057;
+	font-weight: 400;
+}
+
+.results {
+	height: 100%;
+}
+
+.result_text {
+	height: 90%;
+}
+
+.result_text h3 {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 150%;
+	color: #495057;
+}
+
+.display_none {
+	display: none;
+}
+

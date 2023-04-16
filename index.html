@@ -1,13 +1,62 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+		      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Encrypt Alura</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="logo">
+				<img src="resources/logo.png" alt="Logo de Alura latam">
+			</div>
 
-</body>
+			<main>
+				<div class="encrypt_container">
+					<textarea class="input_text" placeholder="Ingrese su texto aqui"></textarea>
+
+					<div class="actions">
+						<div class="info">
+							<img src="resources/info_icon.png" alt="Icono de informacion">
+							<p>Solo letras minúsculas y sin acentos</p>
+						</div>
+
+						<div class="btn_group">
+							<button class="btn_primary">Encriptar</button>
+							<button class="btn_secondary">Desencriptar</button>
+						</div>
+					</div>
+				</div>
+				<div class="result_container">
+					<div class="not_results display_none">
+						<img src="resources/muñeco.png" alt="Imagen para ningun mensaje fue encontrado">
+
+						<h3>Ningun mensaje fue encontrado</h3>
+
+						<p>Ingresa el texto que desees encriptar o desencriptar</p>
+					</div>
+
+					<div class="results">
+						<div class="result_text">
+							<h3>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aperiam consectetur,
+								debitis
+								deserunt doloremque, dolores earum enim in inventore iure magni natus nisi officiis
+								pariatur
+								similique ullam. Aliquam, deserunt!
+							</h3>
+						</div>
+
+						<button class="btn_secondary">Copiar</button>
+					</div>
+
+				</div>
+			</main>
+		</div>
+
+		<script src="js/index.js"></script>
+	</body>
 </html>
