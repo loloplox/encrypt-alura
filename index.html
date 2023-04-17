@@ -16,7 +16,7 @@
 
 			<main>
 				<div class="encrypt_container">
-					<textarea class="input_text" placeholder="Ingrese su texto aqui"></textarea>
+					<textarea class="input_text" placeholder="Ingrese su texto aqui" id="textArea"></textarea>
 
 					<div class="actions">
 						<div class="info">
@@ -25,13 +25,14 @@
 						</div>
 
 						<div class="btn_group">
-							<button class="btn_primary">Encriptar</button>
-							<button class="btn_secondary">Desencriptar</button>
+							<button class="btn_primary" id="btnEncrypt">Encriptar</button>
+							<button class="btn_secondary" id="btnDecrypt">Desencriptar</button>
 						</div>
 					</div>
 				</div>
+
 				<div class="result_container">
-					<div class="not_results display_none">
+					<div class="not_results" id="notResult">
 						<img src="resources/muñeco.png" alt="Imagen para ningun mensaje fue encontrado">
 
 						<h3>Ningun mensaje fue encontrado</h3>
@@ -39,18 +40,12 @@
 						<p>Ingresa el texto que desees encriptar o desencriptar</p>
 					</div>
 
-					<div class="results">
+					<div class="results display_none" id="resultContainer">
 						<div class="result_text">
-							<h3>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aperiam consectetur,
-								debitis
-								deserunt doloremque, dolores earum enim in inventore iure magni natus nisi officiis
-								pariatur
-								similique ullam. Aliquam, deserunt!
-							</h3>
+							<h3 id="resultText"></h3>
 						</div>
 
-						<button class="btn_secondary">Copiar</button>
+						<button class="btn_secondary" id="btnCopy">Copiar</button>
 					</div>
 
 				</div>
